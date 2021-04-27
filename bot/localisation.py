@@ -23,7 +23,7 @@ class Localisation:
     
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
     
-    COMPRESS_SUCCESS = "📥 Downloaded in {}\n\n📀 Compressed in {}\n\n📤 Uploaded in {}\n\n©️ @I_Am_Only_One_1 👑"
+    COMPRESS_SUCCESS = "📥 Downloaded in {}\n\n📀 Compressed in {}\n\n📤 Uploaded in {}\n\n🧑‍💻 @I_Am_Only_One_1 👑"
 
     COMPRESS_PROGRESS = "⏳ Time Left: {}\n🚀 Progress: {}%"
 
@@ -47,7 +47,7 @@ class Localisation:
     
     HELP_MESSAGE = get_config(
         "STRINGS_HELP_MESSAGE",
-        "High Efficiency Video Compressor Bot 🗳\n<i>Send me your telegram big video file in video or file format and I will convert that to small video without lossing quality.</i>\n\nNote: Sometimes little quality may decrease if video is of low quality. I consume 3 times more time than other compressors do this process! 🤒"
+        "High Efficiency Video Compressor Bot 🗳\n<i>send me your telegram big video file in video or file format and I will compress that to small video without lossing video quality.</i>\n\nNote: Sometimes little quality may decrease if video is of low quality. I consume 3 times more time than other compressors do this process! 🤒"
     )
     WRONG_MESSAGE = get_config(
         "STRINGS_WRONG_MESSAGE",
