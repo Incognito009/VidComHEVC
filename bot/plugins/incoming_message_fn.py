@@ -193,7 +193,7 @@ async def incoming_compress_message_f(bot, update):
       if( video is None ):
         try:
           await sent_message.edit_text(
-            text="Download stopped"
+            text="Download Stopped"
           )
           chat_id = LOG_CHANNEL
           utc_now = datetime.datetime.utcnow()
@@ -207,7 +207,7 @@ async def incoming_compress_message_f(bot, update):
         except:
           pass
         delete_downloads()
-        LOGGER.info("Download stopped")
+        LOGGER.info("Download Stopped")
         return
     except (ValueError) as e:
       try:
@@ -247,7 +247,7 @@ async def incoming_compress_message_f(bot, update):
     if duration is None or bitrate is None:
       try:
         await sent_message.edit_text(                
-          text="⚠️ Getting video meta data failed ⚠️"                
+          text="⚠️ Getting Video Meta Data Failed ⚠️"                
         )
         chat_id = LOG_CHANNEL
         utc_now = datetime.datetime.utcnow()
@@ -326,7 +326,7 @@ async def incoming_compress_message_f(bot, update):
       if(upload is None):
         try:
           await sent_message.edit_text(
-            text="Upload stopped"
+            text="Upload Stopped"
           )
           chat_id = LOG_CHANNEL
           utc_now = datetime.datetime.utcnow()
@@ -364,7 +364,7 @@ async def incoming_compress_message_f(bot, update):
       delete_downloads()
       try:
         await sent_message.edit_text(                    
-          text="⚠️ Compression failed ⚠️"               
+          text="⚠️ Compression Failed ⚠️"               
         )
         chat_id = LOG_CHANNEL
         now = datetime.datetime.now()
@@ -377,7 +377,7 @@ async def incoming_compress_message_f(bot, update):
     delete_downloads()
     try:
       await sent_message.edit_text(                    
-        text="⚠️ Failed Downloaded path not exist ⚠️"               
+        text="⚠️ Failed Downloaded Path Not Exist ⚠️"               
       )
       chat_id = LOG_CHANNEL
       utc_now = datetime.datetime.utcnow()
