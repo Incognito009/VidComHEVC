@@ -60,7 +60,7 @@ async def incoming_start_message_f(bot, update):
             if user.status == "kicked":
                await bot.send_message(
                    chat_id=update.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                   text="Sorry Sir, You Are Banned. [Contact Us!](https://t.me/safothebot)",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -68,11 +68,11 @@ async def incoming_start_message_f(bot, update):
         except UserNotParticipant:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Please Join My Updates Channel To Use Me!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{update_channel}")
+                            InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=f"https://t.me/{update_channel}")
                         ]
                     ]
                 ),
@@ -82,7 +82,7 @@ async def incoming_start_message_f(bot, update):
         except Exception:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Something Went Wrong. Contact My [Support Group](https://t.me/safothebot)!",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -92,10 +92,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Updates Channel', url='https://t.me/Discovery_Updates')
-                ],
-                [
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                    InlineKeyboardButton('DEVELOPER', url='https://t.me/I_Am_Only_One_1')
                 ]
             ]
         ),
@@ -113,7 +110,7 @@ async def incoming_compress_message_f(bot, update):
           if user.status == "kicked":
              await bot.send_message(
                  chat_id=update.chat.id,
-                 text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                 text="Sorry Sir, You Are Banned. [Contact Us!](https://t.me/safothebot)",
                  parse_mode="markdown",
                  disable_web_page_preview=True
              )
@@ -121,11 +118,11 @@ async def incoming_compress_message_f(bot, update):
       except UserNotParticipant:
           await bot.send_message(
               chat_id=update.chat.id,
-              text="**Please Join My Updates Channel to use this Bot!**",
+              text="**Please Join My Updates Channel To Use Me!**",
               reply_markup=InlineKeyboardMarkup(
                   [
                       [
-                          InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{update_channel}")
+                          InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=f"https://t.me/{update_channel}")
                       ]
                   ]
               ),
@@ -135,7 +132,7 @@ async def incoming_compress_message_f(bot, update):
       except Exception:
           await bot.send_message(
               chat_id=update.chat.id,
-              text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+              text="Something Went Wrong. Contact My [Support Group](https://t.me/safothebot)!",
               parse_mode="markdown",
               disable_web_page_preview=True
           )
@@ -234,7 +231,7 @@ async def incoming_compress_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Show Bot Status', url=f'https://t.me/{LOG_CHANNEL}') # This will be username na ...
+                    InlineKeyboardButton('🤖 Show Bot Status 🤖', url=f'https://t.me/{LOG_CHANNEL}') # This will be username na ...
                 ]
             ]
         ),
@@ -411,11 +408,11 @@ async def incoming_cancel_message_f(bot, update):
     ikeyboard.append(InlineKeyboardButton("No 🤗", callback_data=("fuckoff").encode("UTF-8")))
     inline_keyboard.append(ikeyboard)
     reply_markup = InlineKeyboardMarkup(inline_keyboard)
-    await update.reply_text("Are you sure? 🚫 This will stop the compression!", reply_markup=reply_markup, quote=True)
+    await update.reply_text("Are You Sure? 🚫 \nThis Will Stop The Compression!", reply_markup=reply_markup, quote=True)
   else:
     delete_downloads()
     await bot.send_message(
       chat_id=update.chat.id,
-      text="No active compression exists",
+      text="No Active Compression Exists!",
       reply_to_message_id=update.message_id
     )
