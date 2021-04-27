@@ -17,6 +17,7 @@ import re
 import json
 import subprocess
 import math
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from bot.helper_funcs.display_progress import (
   TimeFormatter
 )
@@ -103,17 +104,24 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
         if difference > 0:
           ETA = TimeFormatter(difference*1000)
         percentage = math.floor(elapsed_time * 100 / total_time)
-        progress_str = "📊 <b>Progress:</b> {0}%\n[{1}{2}] \n\n© @BotDunia | @Discovery_Updates".format(
+        progress_str = "📊 <b>Progress:</b> {0}%\n\n[{1}{2}] \n\n© <b>@AsmSafone | @SafoTheBot</b> 👑".format(
             round(percentage, 2),
             ''.join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 10))]),
             ''.join([UN_FINISHED_PROGRESS_STR for i in range(10 - math.floor(percentage / 10))])
             )
-        stats = f'📦️ <b>Converting To H256 </b>\n\n' \
-                f'⏰️ <b>TimeLeft:</b> {ETA}\n\n' \
+        stats = f'📦️ <b>Compressing ... </b>\n\n' \
+                f'⏰️ <b>Time Left:</b> {ETA}\n\n' \
                 f'{progress_str}\n'
         try:
           await message.edit_text(
-            text=stats
+            text=stats,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [ 
+                        InlineKeyboardButton('❌ ᴄᴀɴᴄᴇʟ ❌', callback_data='fuckingdo')
+                    ]
+                ]
+            )
           )
         except:
             pass
