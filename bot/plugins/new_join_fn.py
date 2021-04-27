@@ -75,10 +75,10 @@ async def help_message_f(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Status Channel', url='https://t.me/safonevidcompress_logs')
+                    InlineKeyboardButton('🤖 Status Channel 🤖', url='https://t.me/safonevidcompress_logs')
                 ],
                 [
-                    InlineKeyboardButton('🔰 Support Group 🔰', url='https://t.me/safothebot')
+                    InlineKeyboardButton('🔰 Join Support Group 🔰', url='https://t.me/safothebot')
                 ],
                 [
                     InlineKeyboardButton('📢 Channel', url='https://t.me/AsmSafone'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
