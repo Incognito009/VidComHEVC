@@ -6,7 +6,7 @@ from bot.get_cfg import get_config
 
 
 class Localisation:
-    START_TEXT = "👋🏻 <b>Hi Bruh!</b> \n\nI'm <b>High Efficiency Video Compressor 🗳</b> \n\nSend or Foward Me Any Telegram Big Video File I'll Compress It To A Small Video File For You! \n\n<i>Please Hit /help For More Details...😌</i>"
+    START_TEXT = "👋🏻 <b>Hi Bruh!</b> \n\nI'm <b>High Efficiency Video Compressor 🗳</b> \n\nSend or Foward Me Any Telegram Big Video File I'll Compress It To Small Video File For You! \n\n<i>Press /help For More Details...💕</i>"
    
     ABS_TEXT = " Please don't be selfish."
     
@@ -43,11 +43,11 @@ class Localisation:
     
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     
-    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "Already A Process Going On! ⚠️ \n\nPlease Come Back After A While.\nCheck Live Status on Status Channel."
+    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "Already One Process Going On!⚠️ \n\nPlease Come Back After A While.\nCheck Live Status on Status Channel."
     
     HELP_MESSAGE = get_config(
         "STRINGS_HELP_MESSAGE",
-        "High Efficiency Video Compressor Bot 🗳\n<i>Send Me Your Telegram Big Video File In Video or File Format & I Will Compress That To Small Video Without Lossing Video Quality.</i>\n\nNote: Sometimes Little Quality May Decrease If Video Is Of Low Quality. I Consume 3 Times More Time Than Other Compressors Do This Process! 🤒"
+        "High Efficiency Video Compressor Bot 🗳\nSend Me Your Telegram Big Video File In Video or File Format & I Will Compress That To Small Video Without Lossing Video Quality.\n\n<i>Note: Sometimes Little Quality May Decrease If Video Is Of Low Quality. I Consume 3 Times More Time Than Other Compressors Do This Process!</i> 🤒"
     )
     WRONG_MESSAGE = get_config(
         "STRINGS_WRONG_MESSAGE",
